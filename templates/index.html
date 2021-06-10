@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .title {
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blueBox {
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Welcome!</h1>
+    </div>
+    <div class="boxes">
+      <div class="main">
+        {% for x in range(num): %}
+        <div
+          style="background-color: {{background_color}}"
+          class="blueBox"
+        ></div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
